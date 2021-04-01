@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './pages/frontend/about/about.component';
@@ -23,6 +28,7 @@ import { FooterBackendComponent } from './shared/backend/footer-backend/footer-b
 import { SidebarComponent } from './shared/backend/sidebar/sidebar.component';
 import { HeaderFrontendComponent } from './shared/frontend/header-frontend/header-frontend.component';
 import { FooterFrontendComponent } from './shared/frontend/footer-frontend/footer-frontend.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -50,7 +56,13 @@ import { FooterFrontendComponent } from './shared/frontend/footer-frontend/foote
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

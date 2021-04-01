@@ -1,4 +1,11 @@
-<app-header-backend></app-header-backend>
 <div>
-  <router-outlet></router-outlet>
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+    <mat-sidenav-content>
+      <app-header-backend></app-header-backend>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
