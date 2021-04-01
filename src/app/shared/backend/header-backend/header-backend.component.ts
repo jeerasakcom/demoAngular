@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 
 @Component({
@@ -8,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderBackendComponent implements OnInit {
 
+  @Output() navTaggle = new EventEmitter();
+
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  ngClickNavTaggle() {
+
+    this.navTaggle.emit();
   }
 
 }
